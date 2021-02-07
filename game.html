@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Snake game</title> 
+</head>
+
+<style>
+    canvas {background: grey;
+        position: absolute;
+        left: 0;
+        text-align: center;
+    }
+</style>
+
+<body onload="init();">
+    <div style="top: 0;left: 0;z-index: 10;">
+        <button type="button" onclick="init()">Start</button>
+        <div id="webcam-container"></div>
+        <div id="label-container"></div>
+</div>
+
+    <canvas id="myCanvas" width="500" height="500">
+    </canvas>
+</body>
+<script src="snake.js"></script>
+</html>
